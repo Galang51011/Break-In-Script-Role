@@ -1,0 +1,94 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Break In", "Ocean")
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Roles")
+Section:NewButton("The Medic", "Roles", function()
+    local args = {
+    [1] = "MedKit",
+    [2] = false,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeRole"):FireServer(unpack(args))
+
+end)
+
+Section:NewButton("The Stealthy", "Roles", function()
+    local args = {
+    [1] = "TeddBloxpin",
+    [2] = false,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeRole"):FireServer(unpack(args))
+
+end)
+
+Section:NewButton("The Hungry", "Roles", function()
+    local args = {
+    [1] = "Chips",
+    [2] = false,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeRole"):FireServer(unpack(args))
+
+end)
+
+Section:NewButton("The Protector", "Roles", function()
+    local args = {
+    [1] = "Bat",
+    [2] = false,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeRole"):FireServer(unpack(args))
+
+end)
+
+Section:NewButton("The Officer", "Roles", function()
+local args = {
+    [1] = "Gun",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("OutsideRole"):FireServer(unpack(args))
+
+end)
+Section:NewButton("The Swat", "Roles", function()
+local args = {
+    [1] = "SwatGun",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("OutsideRole"):FireServer(unpack(args))
+
+end)
+
+Section:NewButton("The Fighter", "Roles", function()
+local args = {
+    [1] = "Sword",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("OutsideRole"):FireServer(unpack(args))
+
+end)
+Section:NewButton("The Hyper", "Roles", function()
+local args = {
+    [1] = "Lollipop",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("OutsideRole"):FireServer(unpack(args))
+
+end)
+Section:NewButton("The Guest", "Roles", function()
+local args = {
+    [1] = "LinkedSword",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("OutsideRole"):FireServer(unpack(args))
+
+end)
