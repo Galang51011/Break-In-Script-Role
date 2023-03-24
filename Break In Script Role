@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Break In Lobby", "Ocean")
-local Tab = Window:NewTab("Main")
+local Tab = Window:NewTab("Roles")
 local Section = Tab:NewSection("Roles")
 Section:NewButton("The Medic", "Roles", function()
     local args = {
